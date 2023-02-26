@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.get-users-btn {
+  color: #000;
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin: 0 auto 30px;
+  padding: 10px;
+  font-family: Quicksand;
+  font-size: 20px;
+  transition: all .5s;
+  display: block;
+  position: relative;
+}
+
+.get-users-btn:focus, .get-users-btn:hover {
+  cursor: pointer;
+  transition: all .4s linear;
+  transform: scale(2);
+}
+
+.user-container {
+  flex-wrap: wrap;
+  gap: 25px;
+  display: flex;
+}
+
+.card-image {
+  width: 270px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+.card-image:hover {
+  -o-transition: .5s;
+  transition: all .5s;
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px #888;
+}
+
+.person-info {
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 20px;
+  display: block;
+}
+
+.user-name:hover, .user-name:focus {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+  box-shadow: 10px 10px 5px #888;
+}
+
+.user-email:hover, .user-email:focus {
+  cursor: pointer;
+  color: #000;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+  box-shadow: 10px 10px 5px #888;
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */

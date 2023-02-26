@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  position: relative;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.get-users-btn {
+  position: relative;
+  outline: none;
+  display: block;
+  border-radius: 8px;
+  font-family: "Quicksand";
+  font-size: 20;
+  background-color: transparent;
+
+  padding: 10px 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: none;
+  margin: 0 auto;
+  transition: 0.5s;
+  margin-bottom: 30px;
+}
+
+.get-users-btn:focus,
+.get-users-btn:hover {
+  transform: scale(2);
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+/* .get-users-btn :focus,
+.get-users-btn :hover {
+  cursor: pointer;
+  color: #9fdbe9;
+  transform: scale(1.1);
+} */
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card-image {
+  width: 270px;
+  height: 230px;
+  border-radius: 50%;
+}
+.card-image:hover {
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 10px 10px 5px #888888;
+  transform: scale(1.1);
+}
+
+.person-info {
+  display: block;
+  text-align: center;
+
+  font-family: "Quicksand";
+  font-size: 20px;
+}
+
+.user-name:hover,
+.user-name:focus {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 10px 10px 5px #888888;
+}
+.user-email:hover,
+.user-email:focus {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 10px 10px 5px #888888;
+  color: black;
+}
