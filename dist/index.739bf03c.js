@@ -527,12 +527,11 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-function getUsers() {
+async function getUsers() {
     const BASE_URL = "https://reqres.in";
-    return (0, _axiosDefault.default).get(`${BASE_URL}/api/users?page=1&per_page=12`).then((response)=>{
-        if (response.status !== 200) throw new Error(response.status);
-        return response.data.data;
-    });
+    const response = await (0, _axiosDefault.default).get(`${BASE_URL}/api/users?page=1&per_page=12`);
+    if (response.status !== 200) throw new Error(response.status);
+    return response.data.data;
 }
 exports.default = getUsers;
 
